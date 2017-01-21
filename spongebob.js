@@ -44,8 +44,8 @@ function start_dancing()
 
 function create_spongebod(){
     spongebod = PIXI.Sprite.fromImage('spongebob.png');
-    spongebod.x = 350;
-    spongebod.y = 0;
+    spongebod.x = 361;
+    spongebod.y = 85;
 
     spongebod.scale.x = spongebod_ripped_factor;
     spongebod.scale.y = spongebod_ripped_factor;
