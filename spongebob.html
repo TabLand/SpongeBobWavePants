@@ -8,7 +8,7 @@
     <body onload="start_dancing()">
         <div class="formulas">
             Use the following console window to set the x and y positions per point<br/>
-            You may wish to read the pointIndex, speed, time and/or appendageLength variables
+            You may wish to read the pointIndex, speed, time and/or appendageLength variables<br/>
             <textarea id="x_formula" rows="5" cols="150">
 //Ensure variable x is set to a value of your preference by the end
 x = pointIndex * appendageLength;</textarea>
@@ -17,9 +17,10 @@ x = pointIndex * appendageLength;</textarea>
 y = Math.sin((pointIndex * 0.5) + time) * 100;</textarea>
             <div class="parameters">
                 Speed: <input type="number" id="speed" value="10" onchange="updateSpeed()" oninput="updateSpeed()" onkeydown="updateSpeed()" />
-                <br/>
-                <br/>
+                <br/><br/>
                 <input type="button" value="Update Wave Pants" onclick="runCodeInjection()"/>
+                <br/><br/>
+                <a id="twitter" class="twitter-share-button" href="https://twitter.com/intent/tweet?text=%23SpongeBobWavePants" data-size="large">Tweet</a>
             </div>
         </div>
     </body>

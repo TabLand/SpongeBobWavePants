@@ -33,3 +33,15 @@ div {
 #speed {
     text-align: center;    
 }
+
+a{
+    color: #ffff00;
+}
+
+a:hover{
+    color: #ffffff;
+}
+
+a:visited{
+    color: #ffff00;    
+}

@@ -143,6 +143,7 @@ function runCodeInjection(){
         calculate_y = Function("pointIndex", "time", "appendageLength", y_script + "; return y;");
         calculate_x = Function("pointIndex", "time", "appendageLength", x_script + "; return x;");
     }
+    createShareLink();
 }
 
 function updateSpeed(){
@@ -165,15 +166,22 @@ function calculate_x(pointIndex, time, appendageLength){
 }
 
 function createShareLink(){
-    link        = window.location + "#";
+    link        = window.location.href.replace(/#.*/,"") + "#";
     share_speed = "?speed=" + speed;
     share_x     = "&xcode=" + btoa(x_script);
     share_y     = "&ycode=" + btoa(y_script);
     link        = link + share_speed + share_x + share_y;
 
     window.location = link;
-
+    
+    updateTwitter(link);
     return link;
+}
+
+function updateTwitter(link){
+    text = encodeURIComponent("#SpongeBobWavePants");
+    href = "https://twitter.com/intent/tweet?text=" + text + "&url=" + encodeURIComponent(link);
+    document.getElementById("twitter").href = href;
 }
 
 //http://papermashup.com/read-url-get-variables-withjavascript/
