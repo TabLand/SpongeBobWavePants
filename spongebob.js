@@ -41,7 +41,8 @@ var BannedWords = ["BannedWords", "document", "while", "for", "forEach",
                    "width", "height", "renderer", "stage",  "spongebod", 
                    "sponge_arms", "start_dancing", "create_sponge_arms",
                    "create_spongebod", "animate", "containsNoBannedWords", "$(", 
-                   "runCodeInjection", "updateSpeed", "speed", "calculate_x", "calculate_y"];
+                   "runCodeInjection", "updateSpeed", "speed", "calculate_x", "calculate_y",
+                   "checkIfSharedLink", "createShareLink", "updateTwitter", "getUrlVars"];
 
 function start_dancing()
 {
