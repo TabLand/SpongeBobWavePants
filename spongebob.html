@@ -3,7 +3,21 @@
     <head>
         <script src="http://pixijs.download/release/pixi.min.js"></script>
         <script src="spongebob.js"></script>
+        <link rel="stylesheet" type="text/css" href="spongebob.css">
     </head>
     <body onload="start_dancing()">
+        <div class="formulas">
+            Use the following console window to set the x and y positions per point<br/>
+            You may wish to read the pointIndex, speed and/or armsLength variables
+            <textarea id="x_formula" rows="5" cols="150">
+//Ensure variable x is set to a value of your preference by the end
+            </textarea>
+            <textarea id="x_formula" rows="5" cols="150">
+//Ensure variable y is set to a value of your preference by the end
+            </textarea>
+            <div class="parameters">
+                Speed: <input type="number" id="speed" value="1"/>
+            </div>
+        </div>
     </body>
 </html>

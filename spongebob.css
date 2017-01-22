@@ -1,0 +1,35 @@
+@font-face {
+    font-family: KrabbyPatty;
+    src: url(KrabbyPatty.ttf);
+}
+
+body{
+    font-family: KrabbyPatty;
+    background-color: aqua; 
+}
+
+textarea, input{
+    font-family: KrabbyPatty;
+    background-color: black;
+    border: 1px solid #ffff00;
+    color: #ffff00;
+}
+
+div {
+    background-color: black;
+    color: #ffff00; 
+    position: absolute;
+}
+
+.formulas {
+    bottom: 0px;
+    left: 0px;
+}
+
+.parameters{
+   right: 10px; 
+   top: 10px;
+}
+#speed {
+    text-align: center;    
+}
