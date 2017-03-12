@@ -45,3 +45,13 @@ a:hover{
 a:visited{
     color: #ffff00;    
 }
+
+h1{
+    color: black;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    display: inline;
+    text-align: right;
+    right: 20px;
+}
